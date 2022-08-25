@@ -35,5 +35,28 @@ let isUnique= (arr) => {
       return result;
 };
 
-console.log(isUnique([1, 2, 3]) === true);
+// console.log(isUnique([1, 2, 3]) === true);
 // console.log(isUnique([1, 2, 3]) === false);
+
+
+const items = [
+      { name: 'Edward', value: 21 },
+      { name: 'Sharpe', value: 37 },
+      { name: 'And', value: 45 },
+      { name: 'The', value: -12 },
+      { name: 'Magnetic', value: 13 },
+      { name: 'Zeros', value: 37 }
+];
+    
+items.sort( ( a, b ) => a.value - b.value )
+
+let newsArr = [1, 70, 49, 54, 5, 6]
+newsArr.sort()
+function compareNumbers(a, b) {
+      return a - b;
+    }
+
+console.log( newsArr ); 
+let newest = newsArr.sort( ( a, b ) => a - b )
+   console.log(`newest -- ${newest}`);
+console.log(newsArr.sort(compareNumbers));
