@@ -52,11 +52,21 @@ items.sort( ( a, b ) => a.value - b.value )
 
 let newsArr = [1, 70, 49, 54, 5, 6]
 newsArr.sort()
-function compareNumbers(a, b) {
+function    compareNumbers(a, b) {
       return a - b;
     }
 
-console.log( newsArr ); 
+// console.log( newsArr ); 
 let newest = newsArr.sort( ( a, b ) => a - b )
-   console.log(`newest -- ${newest}`);
-console.log(newsArr.sort(compareNumbers));
+//    console.log(`newest -- ${newest}`);
+// console.log( newsArr.sort( compareNumbers ) )
+
+
+const uniqSort = function (arr) {
+      const breadCrumb = {}
+  
+      return [...new Set(arr.sort( ( a, b ) => a - b ))]
+}
+
+console.log(uniqSort( [4, 2, 2, 3, 2, 2, 2] ));
+
