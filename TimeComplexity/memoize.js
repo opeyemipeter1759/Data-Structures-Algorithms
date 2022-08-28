@@ -28,6 +28,5 @@ console.log( 'Task 2 calculated value:', memoTimes10( 9 ) ) // calculated
 console.log(cache);
 console.log( 'Task 2 cached value:', memoTimes10( 9 ) ) // cached
 console.log( 'Task 2 calculated value:', memoTimes10( 70 ) ) // calculated
-
 console.log(cache);
 
